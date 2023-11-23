@@ -55,5 +55,5 @@ RUN apt-get update -qq \
   /var/tmp/* \
   && mkdir -p /run/nordvpn
 ## Refactor iptables for host archetecture
-RUN if [ "${TARGETARCH}" != "amd64" ]; then SANITY_CHECK='--no-sanity-check'; fi \
-  && /usr/local/bin/iptables-wrapper-installer.sh ${SANITY_CHECK}
+#RUN if [ "${TARGETARCH}" != "amd64" ]; then SANITY_CHECK='--no-sanity-check'; fi \
+#  && /usr/local/bin/iptables-wrapper-installer.sh ${SANITY_CHECK}
